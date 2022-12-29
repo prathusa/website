@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base 
+{
+  /* Base styles */
+  html {
+    @apply font-sans text-[#FFFDD0] bg-gray-800
+  }
+  body {
+    @apply bg-gray-800 text-[#FFFDD0] tracking-wide
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl md:text-5xl
+  }
+
+  li {
+    @apply cursor-pointer
+  }
+
+  button {
+    @apply p-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#8e54e9] text-[#FFFDD0] font-bold tracking-wide text-sm sm:text-base md:text-lg
+  }
+
+  .menu-bar {
+    @apply ml-10 text-sm uppercase hover:border-b text-xl 
+  }
+
+  .accent {
+    @apply text-[#5651e5]
+  }
+}
