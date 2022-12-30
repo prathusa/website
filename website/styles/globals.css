@@ -2,14 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*, html {
+  scroll-behavior: smooth !important;
+}
+
 @layer base 
 {
   /* Base styles */
+  /* .motif1 {
+    @apply [#FFFDD0]
+  } */
+/* 
   html {
-    @apply font-sans text-[#FFFDD0] bg-gray-800
-  }
+    @apply font-sans text-[#FFFDD0] bg-gray-900
+  } */
+  
   body {
-    @apply bg-gray-800 text-[#FFFDD0] tracking-wide
+    @apply bg-gray-900 text-[#FFFDD0] tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -36,7 +46,19 @@
     @apply ml-10 text-sm uppercase hover:border-b text-xl 
   }
 
+  .accent1 {
+    @apply text-emerald-400
+  }
+
+  .accent1:hover {
+    @apply text-emerald-600
+  }
+
   .accent {
-    @apply text-[#5651e5]
+    @apply text-blue-400
+  }
+
+  .accent:hover {
+    @apply text-blue-600
   }
 }
