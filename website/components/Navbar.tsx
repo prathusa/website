@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
@@ -7,55 +7,70 @@ import { useRouter } from 'next/router'
 // import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState('#111827');
+  const [linkColor, setLinkColor] = useState('#FFFDD0');
 
-  const [nav, setNav] = useState(false)
-  const [shadow, setShadow] = useState(false)
-  const [navBg, setNavBg] = useState('#60a5fa')
-  const [navBg1, setNavBg1] = useState('#111827')
-  const [linkColor, setLinkColor] = useState('#FFFDD0')
-  const router = useRouter()
+  // useEffect(() => {
+  //   const handleShadow = () => {
+  //     if (window.scrollY >= 90) {
+  //       setShadow(true);
+  //       setNavBg('#111827');
+  //     } else {
+  //       setShadow(false);
+  //     }
+  //   };
+  //   window.addEventListener('scroll', handleShadow);
+  // }, []);
 
-  useEffect(() => {
-    if (router.asPath === '/' && false) {
-      setNavBg('gray-900')
-      setLinkColor('#FFFDD0')
-    } else {
-      // setNavBg('#60a5fa')
-      // setLinkColor('#FFFDD0')
-    }
-  }, [router])
+  // const [nav, setNav] = useState(false)
+  // const [shadow, setShadow] = useState(false)
+  // const [navBg, setNavBg] = useState('#111827')
+  // const [linkColor, setLinkColor] = useState('#FFFDD0')
+  // const router = useRouter()
+
+  // // useEffect(() => {
+  // //   if (router.asPath === '/' && false) {
+  // //     setNavBg('gray-900')
+  // //     setLinkColor('#FFFDD0')
+  // //   } else {
+  // //     // setNavBg('#60a5fa')
+  // //     // setLinkColor('#FFFDD0')
+  // //   }
+  // // }, [router])
 
   const handleNav = () => {
     setNav(!nav)
   }
 
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setShadow(true)
+      setNavBg('#60a5fa')
+    } else {
+      setShadow(false)
+      setNavBg('#111827')
+    }
+  }
   useEffect(
     () => {
-      const handleScroll = () => {
-        if (window.scrollY > 0) {
-          setShadow(true)
-          setNavBg('#60a5fa')
-          setLinkColor('#FFFDD0')
-        } else {
-          setShadow(false)
-          setNavBg1('#111827')
-          setLinkColor('#FFFDD0')
-        }
-      }
+      console.log('scroll')
       window.addEventListener('scroll', handleScroll)
       return () => window.removeEventListener('scroll', handleScroll)
     }
   )
 
+
   return (
-    <div style={{backgroundColor: (shadow ? `${navBg}` : `${navBg1}`)}} className={'fixed w-full h-20 z-[100]' + (shadow ? ' shadow-xl' : '')}>
+    <div style={{ backgroundColor: `${navBg}` }} className={'fixed w-full h-20 z-[100]' + (shadow ? ' shadow-xl' : '')}>
       <div className='flex justify-between items-center w-full h-full px-3 2xl:px-16'>
         <Link href='/'>
           <Image src="/../public/assets/me.png" alt="/" width={55} height={50} />
         </Link>
         <div className='flex justify-end px-2'>
-          <ul style={{color: `${linkColor}`}} className='hidden md:flex'>
-            <Link href='/'>
+          <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+            <Link href='/#main'>
               <li className='menu-bar'>Home</li>
             </Link>
             <Link href='/#about'>

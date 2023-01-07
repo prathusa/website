@@ -6,8 +6,8 @@ import Main from '../components/Main'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
-// import About from '../components/About'
-const About = React.lazy(() => import('../components/About'));
+import About from '../components/About'
+// const About = React.lazy(() => import('../components/About'));
 
 export default function Home() {
   return (
@@ -18,7 +18,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='snap-mandatory snap-y h-screen overflow-scroll overflow-x-hidden'>
+      {/* <div className='snap-mandatory snap-y h-screen overflow-scroll overflow-x-hidden'> */}
+      <div className='snap-mandatory snap-y h-screen overflow-x-hidden'>
         <Navbar />
         <Main />
         <About />

@@ -12,8 +12,7 @@ const Main = () => {
           </h1>
           <div className='flex justify-center'>
             <h1 className='py-4'>
-              I'm a 
-              <span className='accent1'> </span>
+              I'm a<span> </span>
             <Typed
               className='accent'
               strings={['Developer', 'Student', 'Learner']}
