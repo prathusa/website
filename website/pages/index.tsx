@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       {/* <div className='snap-mandatory snap-y h-screen overflow-scroll overflow-x-hidden'> */}
       <div className='snap-mandatory snap-y h-screen overflow-x-hidden'>
-        <Navbar />
+        {/* <Navbar /> */}
         <Main />
         <About />
         <Skills />
