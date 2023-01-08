@@ -21,7 +21,7 @@ const About = () => {
                 <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-100'>
                     {/* Use Lazy Loading */}
                     {/* <img src="" alt="" /> */}
-                    <Image className='rounded-xl' src="/../public/assets/me.png" alt="/" width={300} height={50} />
+                    <Image className='rounded-xl' src={require("/public/assets/me.png")} alt="/" width={300} height={50} />
                 </div>
             </div>
         </div>
