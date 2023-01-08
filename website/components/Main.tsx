@@ -3,7 +3,7 @@ import Typed from 'react-typed'
 
 const Main = () => {
   return (
-    <div id='main' className='snap-start w-full h-screen text-center'>
+    <div id='main' className='snap-start scroll-my-6 w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
           {/* <p className='uppercase text-sm tracking-widest'>Some slogan</p> */}
