@@ -5,8 +5,9 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Contact = () => {
+    const icon_sz = 65;
     return (
-        <div id='contact' className='snap-start w-full md:h-screen p-2 flex items-center py-16'>
+        <div id='contact' className='snap-start w-full md:h-screen p-2 flex items-center justify-center py-16'>
             <div className='max-w-[1240px] m-auto gap-8 px-2'>
                 <div className='col-span-2'>
                     <p className='uppercase text-xl tracking-widest accent'>Contact</p>
@@ -23,15 +24,15 @@ const Contact = () => {
                 {/* <img src="" alt="" /> */}
                 {/* <Image className='rounded-xl' src={require("/public/assets/me.png")} alt="/" width={300} height={50} /> */}
                 {/* </div> */}
-            <div className='flex justify-center w-full py-8'>
+            <div className='flex justify-center w-full py-8 px-6'>
                 <Link href='https://linkedin.com/in/pratham-baid/'>
-                    <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><FaLinkedin size={65} /></div>
+                    <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><FaLinkedin size={icon_sz} /></div>
                 </Link>
                 <Link href='https://github.com/prathusa'>
-                    <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><FaGithub size={65} /></div>
+                    <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><FaGithub size={icon_sz} /></div>
                 </Link>
                 <Link href='mailto: prathbaid@gmail.com'>
-                    <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><AiOutlineMail size={65} /></div>
+                    <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><AiOutlineMail size={icon_sz} /></div>
                 </Link>
             </div>
             </div>
