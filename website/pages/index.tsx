@@ -30,11 +30,17 @@ export default function Home() {
       <div className='snap-mandatory snap-y h-screen overflow-x-hidden no-scrollbar'> 
         <Navbar />
         <Main />
+        <div className='h-20 z-[100]'></div>
         <About />
+        <div className='h-20 z-[100]'></div>
         <Skills />
+        <div className='h-20 z-[100]'></div>
         <Experience />
+        <div className='h-20 z-[100]'></div>
         <Projects />
+        <div className='h-20 z-[100]'></div>
         <Contact />
+        <div className='h-20 z-[100]'></div>
       </div>
     </>
   )
