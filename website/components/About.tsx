@@ -11,7 +11,7 @@ const About = () => {
                         <h2 className='py-4'>Who am <span className='accent1'>I</span>?</h2>
                     </div>
                     <div >
-                        <p className='py-2'>One Line Response</p>
+                        {/* <p className='py-2'>One Line Response</p> */}
                         <p className='py-2'>I am a junior CS, ECE, and Math major at the University of Wisconsin-Madison.</p>
                         <p className='py-2'>I am interested in systems design, low level, high speed, performant, and algorithmic code. I like to arrive at data driven conclusions and enforce best practices in common practice. Discovering insights from data and obtaining data from sight excites me.</p>
                         {/* <p className='py-2'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
