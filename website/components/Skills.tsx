@@ -63,6 +63,14 @@ const Skills = () => {
                         title='Vim'
                         img={require('/public/assets/skills/vim.png')}
                     />
+                    <Skill
+                        title='Java'
+                        img={require('/public/assets/skills/java.png')}
+                    />
+                    <Skill
+                        title='JUnit'
+                        img={require('/public/assets/skills/junit.png')}
+                    />
                     {/* <Skill
                         title='Power BI'
                         img={require('/public/assets/skills/power_bi.png')}
