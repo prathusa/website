@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Skills = () => {
     return (
-        <div id='skills' className='snap-start scroll-my-6 w-full md:h-screen p-2 flex items-center py-16'>
+        <div id='skills' className='snap-start w-full md:h-screen p-2 flex items-center py-16'>
             <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 px-2'>
                 <div className='col-span-2'>
                     <p className='uppercase text-xl tracking-widest accent'>Skills</p>

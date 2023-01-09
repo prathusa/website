@@ -4,7 +4,7 @@ import Project from './Project'
 
 const Projects = () => {
     return (
-        <div id='projects' className='snap-start scroll-m-6 w-full p-2 py-4'>
+        <div id='projects' className='snap-start w-full p-2 py-4'>
             <div className='max-w-[1240px] mx-auto px-2 py-16'>
                 <p className='uppercase text-xl tracking-widest accent'>Projects</p>
                 <div className='flex justify-left'>

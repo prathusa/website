@@ -27,20 +27,14 @@ export default function Home() {
     via-red-500
     to-yellow-500
     background-animate'></div> */}
-      <div className='snap-mandatory snap-y h-screen overflow-x-hidden no-scrollbar'> 
+      <div className='snap-mandatory snap-y h-screen overflow-x-hidden no-scrollbar scroll-py-8'> 
         <Navbar />
         <Main />
-        <div className='h-20 z-[100]'></div>
         <About />
-        <div className='h-20 z-[100]'></div>
         <Skills />
-        <div className='h-20 z-[100]'></div>
         <Experience />
-        <div className='h-20 z-[100]'></div>
         <Projects />
-        <div className='h-20 z-[100]'></div>
         <Contact />
-        <div className='h-20 z-[100]'></div>
       </div>
     </>
   )
