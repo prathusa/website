@@ -14,25 +14,25 @@ const Projects = () => {
                     <Project
                         title='MD5 Hash Cracker'
                         bg={require('/public/assets/me.png')}
-                        url='/property'
+                        url='/projects/md5_hash'
                         tech='CUDA C++ '
                     />
                     <Project
                         title='MadGPA'
                         bg={require('/public/assets/me.png')}
-                        url='/property'
+                        url='/projects/madgpa'
                         tech='Javascript Chrome Extension'
                     />
                     <Project
                         title='Parallelized Radix Sort'
                         bg={require('/public/assets/me.png')}
-                        url='/property'
+                        url='/projects/pradix_sort'
                         tech='C'
                     />
                     <Project
-                        title='Property Finder'
+                        title='Zoom Scheduler'
                         bg={require('/public/assets/me.png')}
-                        url='/property'
+                        url='/projects/zoom_bot'
                         tech='React JS'
                     />
                     <Project

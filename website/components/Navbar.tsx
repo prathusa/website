@@ -93,7 +93,7 @@ const Navbar = () => {
       {/* onclick hides closes navbar when user clicks off of the sidebar (when parent is clicked but child is not then hide bar) */}
       <div className={nav ? 'fixed md:hidden left-0 top-0 w-full h-screen bg-black/70' : ''} onClick={(event) => { if (event.target === event.currentTarget) setNav(false) }}>
         {/* transitions from left (offscreen) to right where the bar is visible */}
-        <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-700 p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
+        <div className={'flex flex-col ' + (nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-700' : 'fixed left-[-100%] top-0') + ' p-10 ease-in duration-500'}>
           <div>
             <div className='flex w-full items-center justify-between'>
               <Image src={require("/public/assets/me.png")} alt="/" width={45} height={50} />
@@ -113,7 +113,7 @@ const Navbar = () => {
                 <Link href='/#projects'><li onClick={() => setNav(false)} className='py-4 scale-110'> Projects </li></Link>
                 <Link href='/#contact'><li onClick={() => setNav(false)} className='py-4 scale-110'> Contact </li></Link>
               </ul>
-              <div className='pt-40'>
+              <div className='inset-x-0 bottom-0'>
                 <p className='uppercase tracking-widest'> Social Media </p>
                 <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                   <Link href='https://linkedin.com/in/pratham-baid/'>

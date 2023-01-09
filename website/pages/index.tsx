@@ -19,14 +19,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <div className='snap-mandatory snap-y h-screen overflow-scroll overflow-x-hidden'> */}
-      {/* <div className='w-full
-    h-screen
-    bg-gradient-to-r
-    from-pink-500
-    via-red-500
-    to-yellow-500
-    background-animate'></div> */}
       <div className='snap-mandatory snap-y h-screen overflow-x-hidden no-scrollbar scroll-py-8'> 
         <Navbar />
         <Main />

@@ -23,17 +23,17 @@ const Contact = () => {
                 {/* <img src="" alt="" /> */}
                 {/* <Image className='rounded-xl' src={require("/public/assets/me.png")} alt="/" width={300} height={50} /> */}
                 {/* </div> */}
-                    <div className='flex justify-center inset-x-0 bottom-0'>
-                        <Link href='https://linkedin.com/in/pratham-baid/'>
-                            <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><FaLinkedin size={65} /></div>
-                        </Link>
-                        <Link href='https://github.com/prathusa'>
-                            <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><FaGithub size={65} /></div>
-                        </Link>
-                        <Link href='mailto: prathbaid@gmail.com'>
-                            <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><AiOutlineMail size={65} /></div>
-                        </Link>
-                    </div>
+            <div className='flex justify-center w-full py-8'>
+                <Link href='https://linkedin.com/in/pratham-baid/'>
+                    <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><FaLinkedin size={65} /></div>
+                </Link>
+                <Link href='https://github.com/prathusa'>
+                    <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><FaGithub size={65} /></div>
+                </Link>
+                <Link href='mailto: prathbaid@gmail.com'>
+                    <div className='p-3 px-8 cursor-pointer hover:scale-105 ease-in duration-100'><AiOutlineMail size={65} /></div>
+                </Link>
+            </div>
             </div>
         </div>
     )

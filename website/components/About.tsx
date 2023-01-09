@@ -13,9 +13,9 @@ const About = () => {
                     <div >
                         <p className='py-2'>One Line Response</p>
                         <p className='py-2'>I am a junior CS, ECE, and Math major at the University of Wisconsin-Madison.</p>
-                        <p className='py-2'>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p className='py-2'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p className='py-2'></p>
+                        <p className='py-2'>I am interested in systems design, low level, high speed, performant, and algorithmic code. I like to arrive at data driven conclusions and enforce best practices in common practice. Discovering insights from data and obtaining data from sight excites me.</p>
+                        {/* <p className='py-2'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
+                        <p className='py-2'>Applications of theoretical concepts engage me. My goal as a triple major is to learn a breadth of theory, to facilitate elegant implementations of abstract solutions.</p>
                         {/* <p className='py-2 underline cursor-pointer'>Some Link</p> */}
                     </div>
                 </div>
