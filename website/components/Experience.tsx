@@ -8,7 +8,7 @@ const Experience = () => {
                     <div className='col-span-2'>
                         <p className='uppercase text-xl tracking-widest accent'>Experience</p>
                         <div className='flex justify-left'>
-                            <h2 className='py-4'>Who am <span className='accent1'>I</span>?</h2>
+                            <h2 className='py-4'>Under <span className='accent1'>Construction</span>!</h2>
                         </div>
                         <div >
                             <p className='py-2'>One Line Response</p>

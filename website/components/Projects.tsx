@@ -47,7 +47,7 @@ const Projects = () => {
                         url='/property'
                         tech='React JS'
                     />
-                    
+
                 </div>
             </div>
         </div>

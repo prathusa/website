@@ -9,7 +9,7 @@ const Skills = () => {
                 <p className='text-xl tracking-widest uppercase accent'>
                     Skills
                 </p>
-                <h2 className='py-4'>What <span className='accent1'>I</span> Can Do</h2>
+                <h2 className='py-4'>What Can <span className='accent1'>I</span> Do?</h2>
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
                     <Skill
                         title='HTML'
@@ -71,10 +71,10 @@ const Skills = () => {
                         title='JUnit'
                         img={require('/public/assets/skills/junit.png')}
                     />
-                    {/* <Skill
+                    <Skill
                         title='Power BI'
                         img={require('/public/assets/skills/power_bi.png')}
-                    /> */}
+                    />
                     <Skill
                         title='C'
                         img={require('/public/assets/skills/c_lang.png')}
