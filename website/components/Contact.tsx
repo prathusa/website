@@ -5,7 +5,7 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Contact = () => {
-    const icon_sz = 55;
+    const icon_sz = 45;
     return (
         <div id='contact' className='sub-section w-full md:h-screen p-2 flex items-center py-16'>
             <div className='max-w-[1240px] m-auto gap-8 px-2 justify-center'>

@@ -3,10 +3,10 @@ import Image, { StaticImageData } from 'next/image'
 
 const Skill = ({ title, img }: { title: string, img: StaticImageData }) => {
     return (
-        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-[#161616]'>
+        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-[#262626]'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src={img} width={55} height={55} alt='/' />
+                    <Image src={img} width={65} height={65} alt='/' />
                 </div>
                 <div className='flex flex-col items-center justify-center'>
                     <h3>{title}</h3>

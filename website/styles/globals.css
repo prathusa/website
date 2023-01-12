@@ -19,7 +19,7 @@
   } */
   
   body {
-    @apply bg-[#0e0e0e] text-[#FFFDD0] tracking-wide
+    @apply bg-[#1e1e1e] text-[#FFFDD0] tracking-wide
   }
 
   .background-animate {
@@ -85,7 +85,7 @@
   }
 
   .sub-section {
-    @apply scroll-mt-8 snap-start snap-normal
+    @apply scroll-mt-8 snap-start
   }
 }
 
