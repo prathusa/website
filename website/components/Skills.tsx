@@ -28,7 +28,7 @@ const Skills = () => {
                         img={require('/public/assets/skills/react.png')}
                     />
                     <Skill
-                        title='TailwindCSS'
+                        title='Tailwind CSS'
                         img={require('/public/assets/skills/tailwind.png')}
                     />
                     <Skill
