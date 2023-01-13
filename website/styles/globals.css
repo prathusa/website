@@ -85,7 +85,7 @@
   }
 
   .sub-section {
-    @apply snap-start /* scroll-mt-8  */
+    @apply snap-start scroll-mt-8 
   }
   
 }
