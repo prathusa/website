@@ -6,38 +6,59 @@ import { useEffect } from 'react';
 import * as gtag from '../lib/gtag';
 
 export default function App({ Component, pageProps }: AppProps) {
-  const router = useRouter();
+  // const router = useRouter();
 
-  useEffect(() => {
-    const handleRouteChange = (url: any) => {
-      gtag.pageview(url);
-    };
+  // useEffect(() => {
+  //   const handleRouteChange = (url: any) => {
+  //     gtag.pageview(url);
+  //   };
 
-    router.events.on("routeChangeComplete", handleRouteChange);
+  //   router.events.on("routeChangeComplete", handleRouteChange);
 
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
+  //   return () => {
+  //     router.events.off("routeChangeComplete", handleRouteChange);
+  //   };
+  // }, [router.events]);
 
+  // return (
+  //   <>
+  //     <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-Q6X7HC57ST"></Script>
+  //     <Script
+  //       id='google-analytics'
+  //       strategy="afterInteractive"
+  //       dangerouslySetInnerHTML = {{
+  //         __html: `
+  //           window.dataLayer = window.dataLayer || [];
+  //           function gtag(){dataLayer.push(arguments);}
+  //           gtag('js', new Date());
+  //           gtag('config', 'G-Q6X7HC57ST', {
+  //             page_path: window.location.pathname,
+  //           });
+  //           `,
+  //       }}
+  //     />
+  //     <Component {...pageProps} />
+  //   </>
+  // )
   return (
     <>
-      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-Q6X7HC57ST"></Script>
-      <Script
-        id='google-analytics'
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML = {{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-Q6X7HC57ST', {
-              page_path: window.location.pathname,
-            });
-            `,
-        }}
-      />
+      <div className="container">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q6X7HC57ST"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q6X7HC57ST');
+        `}
+        </Script>
+      </div>
       <Component {...pageProps} />
     </>
+
   )
 }
