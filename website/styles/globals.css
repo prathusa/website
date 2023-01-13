@@ -5,6 +5,7 @@
 
 *, html {
   scroll-behavior: smooth !important;
+  scroll-padding: 0 0 150px 0;
 }
 
 @layer base 

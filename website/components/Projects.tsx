@@ -2,6 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import Project from './Project'
 
+import md5_hash from '/public/assets/projects/md5_hash/MD5 Brute Force Timings.png'
+import madgpa from '/public/assets/projects/madgpa/MadGPA.png'
+import psort from '/public/assets/projects/psort/benchmark.png'
+
 const Projects = () => {
     return (
         <div id='projects' className='sub-section w-full p-2 py-4'>
@@ -13,19 +17,25 @@ const Projects = () => {
                 <div className='grid md:grid-cols-2 gap-8'>
                     <Project
                         title='MD5 Hash Cracker'
-                        bg={require('/public/assets/me.png')}
+                        bg={md5_hash}
                         url='/projects/md5_hash'
                         tech='CUDA C++ '
                     />
                     <Project
-                        title='MadGPA'
+                        title='Property Finder'
                         bg={require('/public/assets/me.png')}
+                        url='/property'
+                        tech='React JS'
+                    />
+                    <Project
+                        title='MadGPA'
+                        bg={madgpa}
                         url='/projects/madgpa'
                         tech='Javascript Chrome Extension'
                     />
                     <Project
                         title='Parallelized Radix Sort'
-                        bg={require('/public/assets/me.png')}
+                        bg={psort}
                         url='/projects/pradix_sort'
                         tech='C'
                     />
@@ -33,12 +43,6 @@ const Projects = () => {
                         title='Zoom Scheduler'
                         bg={require('/public/assets/me.png')}
                         url='/projects/zoom_bot'
-                        tech='React JS'
-                    />
-                    <Project
-                        title='Property Finder'
-                        bg={require('/public/assets/me.png')}
-                        url='/property'
                         tech='React JS'
                     />
                     <Project

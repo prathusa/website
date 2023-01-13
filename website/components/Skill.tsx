@@ -3,7 +3,7 @@ import Image, { StaticImageData } from 'next/image'
 
 const Skill = ({ title, img }: { title: string, img: StaticImageData }) => {
     return (
-        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-[#262626]'>
+        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 bg-[#2e2e2e]'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
                     <Image src={img} width={55} height={55} alt='/' />
