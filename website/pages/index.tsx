@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Pite</title>
+        <title>Pratham's Portfolio Pite</title>
         <meta name="description" content="Pratham's Portfolio Site" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
