@@ -22,10 +22,10 @@ const Projects = () => {
                         tech='CUDA C++ '
                     />
                     <Project
-                        title='Property Finder'
+                        title="Pratham's Portfolio Site"
                         bg={require('/public/assets/me.png')}
-                        url='/property'
-                        tech='React JS'
+                        url='/property/'
+                        tech='React Next.js TailwindCSS TypeScript'
                     />
                     <Project
                         title='MadGPA'
