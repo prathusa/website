@@ -12,12 +12,28 @@ const Skills = () => {
                 <h2 className='py-4'>What Can <span className='accent1'>I</span> Do?</h2>
                 <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
                     <Skill
-                        title='HTML'
-                        img={require('/public/assets/skills/html.png')}
+                        title='C'
+                        img={require('/public/assets/skills/c_lang.png')}
                     />
                     <Skill
-                        title='CSS'
-                        img={require('/public/assets/skills/css.png')}
+                        title='C++'
+                        img={require('/public/assets/skills/cpp.png')}
+                    />
+                    <Skill
+                        title='CUDA'
+                        img={require('/public/assets/skills/cuda.png')}
+                    />
+                    <Skill
+                        title='Python'
+                        img={require('/public/assets/skills/python.png')}
+                    />
+                    <Skill
+                        title='Java'
+                        img={require('/public/assets/skills/java.png')}
+                    />
+                    <Skill
+                        title='TypeScript'
+                        img={require('/public/assets/skills/typescript.png')}
                     />
                     <Skill
                         title='JavaScript'
@@ -28,8 +44,20 @@ const Skills = () => {
                         img={require('/public/assets/skills/react.png')}
                     />
                     <Skill
+                        title='Next.JS'
+                        img={require('/public/assets/skills/nextjs.png')}
+                    />
+                    <Skill
                         title='Tailwind CSS'
                         img={require('/public/assets/skills/tailwind.png')}
+                    />
+                    <Skill
+                        title='HTML'
+                        img={require('/public/assets/skills/html.png')}
+                    />
+                    <Skill
+                        title='CSS'
+                        img={require('/public/assets/skills/css.png')}
                     />
                     <Skill
                         title='Firebase'
@@ -39,34 +67,21 @@ const Skills = () => {
                         title='Github'
                         img={require('/public/assets/skills/github1.png')}
                     />
-                    <Skill
-                        title='Next.JS'
-                        img={require('/public/assets/skills/nextjs.png')}
-                    />
-                    <Skill
+                    {/* <Skill
                         title='AWS'
                         img={require('/public/assets/skills/aws.png')}
-                    />
-                    <Skill
-                        title='C++'
-                        img={require('/public/assets/skills/cpp.png')}
-                    />
+                    /> */}
+
                     <Skill
                         title='Matlab'
                         img={require('/public/assets/skills/matlab.png')}
                     />
-                    <Skill
-                        title='Python'
-                        img={require('/public/assets/skills/python.png')}
-                    />
+
                     <Skill
                         title='Vim'
                         img={require('/public/assets/skills/vim.png')}
                     />
-                    <Skill
-                        title='Java'
-                        img={require('/public/assets/skills/java.png')}
-                    />
+
                     <Skill
                         title='JUnit'
                         img={require('/public/assets/skills/junit.png')}
@@ -75,10 +90,7 @@ const Skills = () => {
                         title='Power BI'
                         img={require('/public/assets/skills/power_bi.png')}
                     />
-                    <Skill
-                        title='C'
-                        img={require('/public/assets/skills/c_lang.png')}
-                    />
+
                     {/* <Skill
                         title='OpenMP'
                         img={require('/public/assets/skills/openmp.png')}
@@ -87,14 +99,7 @@ const Skills = () => {
                         title='SQL'
                         img={require('/public/assets/skills/sql.png')}
                     />
-                    <Skill
-                        title='TypeScript'
-                        img={require('/public/assets/skills/typescript.png')}
-                    />
-                    <Skill
-                        title='CUDA'
-                        img={require('/public/assets/skills/cuda.png')}
-                    />
+
                     {/* <Skill
                         title='Next.JS'
                         img={require('/public/assets/skills/power_bi.png')}
