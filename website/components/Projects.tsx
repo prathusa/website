@@ -5,6 +5,7 @@ import Project from './Project'
 import md5_hash from '/public/assets/projects/md5_hash/MD5 Brute Force Timings.png'
 import madgpa from '/public/assets/projects/madgpa/MadGPA.png'
 import psort from '/public/assets/projects/psort/benchmark.png'
+import card from "/public/assets/construction.jpg"
 
 const Projects = () => {
     return (
@@ -23,7 +24,7 @@ const Projects = () => {
                     />
                     <Project
                         title="Pratham's Portfolio Pite"
-                        bg={require('/public/assets/me.png')}
+                        bg={card}
                         url='/property/'
                         tech='React Next.js TailwindCSS TypeScript'
                     />
@@ -41,13 +42,13 @@ const Projects = () => {
                     />
                     <Project
                         title='Zoom Scheduler'
-                        bg={require('/public/assets/me.png')}
+                        bg={card}
                         url='/projects/zoom_bot'
                         tech='React JS'
                     />
                     <Project
                         title='Property Finder'
-                        bg={require('/public/assets/me.png')}
+                        bg={card}
                         url='/property'
                         tech='React JS'
                     />
