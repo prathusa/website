@@ -37,7 +37,8 @@ const Projects = () => {
                     <Project
                         title='Parallelized Radix Sort'
                         bg={psort}
-                        url='/projects/pradix_sort'
+                        // url='/projects/pradix_sort'
+                        url='https://github.com/prathusa/prsort'
                         tech='C'
                     />
                     <Project
