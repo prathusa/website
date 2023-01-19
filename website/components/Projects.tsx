@@ -4,10 +4,11 @@ import Project from './Project'
 
 import md5_hash from '/public/assets/projects/md5_hash/MD5 Brute Force Timings.png'
 import madgpa from '/public/assets/projects/madgpa/MadGPA.png'
-import psort from '/public/assets/projects/psort/benchmark.png'
+import prsort from '/public/assets/projects/prsort/benchmark.png'
 import card from "/public/assets/construction.jpg"
 
 const Projects = () => {
+    // console.log('Projects loaded!')
     return (
         <div id='projects' className='sub-section w-full p-2 py-4'>
             <div className='max-w-[1240px] mx-auto px-2 py-16'>
@@ -36,9 +37,8 @@ const Projects = () => {
                     />
                     <Project
                         title='Parallelized Radix Sort'
-                        bg={psort}
-                        // url='/projects/pradix_sort'
-                        url='https://github.com/prathusa/prsort'
+                        bg={prsort}
+                        url='/projects/pradix_sort'
                         tech='C'
                     />
                     <Project
