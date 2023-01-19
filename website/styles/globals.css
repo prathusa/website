@@ -10,14 +10,6 @@
 
 @layer base 
 {
-  /* Base styles */
-  /* .motif1 {
-    @apply [#FFFDD0]
-  } */
-/* 
-  html {
-    @apply font-sans text-[#FFFDD0] bg-gray-900
-  } */
   
   body {
     @apply bg-[#1e1e1e] text-[#fffdde] tracking-wide
