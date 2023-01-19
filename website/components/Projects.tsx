@@ -26,7 +26,8 @@ const Projects = () => {
                     <Project
                         title="Pratham's Portfolio Pite"
                         bg={card}
-                        url='/property/'
+                        // url='/property/'
+                        url='https://github.com/prathusa/website'
                         tech='React Next.js TailwindCSS TypeScript'
                     />
                     <Project
