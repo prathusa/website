@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import bg from '/public/assets/projects/md5_hash/md5_bg.png';
-import img from '/public/assets/projects/md5_hash/MD5_algorithm.png';
+import banner from '/public/assets/projects/madgpa/banner.png';
+import img from '/public/assets/projects/madgpa/MadGPA.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
@@ -11,14 +11,14 @@ const madgpa = () => {
       <div className='w-screen h-[30vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[30vh] bg-black/70 z-10' />
         <Image
-          className='object-cover absolute z-1'
+          className='object-fit absolute z-1'
           fill
-          src={bg}
+          src={banner}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2'>
-          <h2 className='py-2'>MD5 Hash Cracker</h2>
-          <h3>CUDA | C++</h3>
+          <h2 className='py-2'>MadGPA</h2>
+          <h3>Javascript | Python | Firebase | Chrome API</h3>
         </div>
       </div>
 
@@ -33,43 +33,43 @@ const madgpa = () => {
           <Image
             className='float-right p-8'
             src={img}
-            width={300}
-            alt='MD5 Bitwise Algorithm Diagram'
+            width={430}
+            alt='UW Madison Course Enrollment Extension'
           />
           {/* </div> */}
           <p className='py-8'>
-            The MD5 hash function is commonly used to verify the integrity of data, such as the integrity of downloaded files or messages
-            transmitted over a network. However, the MD5 encryption scheme has been found to be vulnerable to a number of attacks and is
-            no longer considered secure. This project aims to highlight the vulnerabilities of the MD5 encryption scheme by using a GPU
-            (Graphics Processing Unit) to brute force it. The project involves creating a program that takes an MD5 hash value as input
-            and uses a GPU to quickly try every possible combination of characters until it finds a match. The program could then be used
-            to demonstrate the weakness of the MD5 encryption scheme by showing how quickly it can be broken using a brute-force attack.
-            Overall, this project highlights the significance of using stronger and more secure encryption methods to protect sensitive data.
+          MadGPA is a powerful Chrome extension that enhances the official University of Wisconsin-Madison course enrollment website by overlaying key course distribution data. This valuable information helps students make informed decisions when balancing their course schedules and balancing academic rigor. With a 5-star rating on the Chrome store and an active user base of 9 daily users, MadGPA is a must-have tool for anyone seeking to excel in their studies at UW-Madison.
           </p>
           <a
-            href='https://github.com/prathusa/MD5_Hash_Cracker'
+            href='https://chrome.google.com/webstore/detail/madgpa/ngglfcpeciojeakbdenajcljcinejjpa'
             target='_blank'
             rel='noreferrer'
           >
-            <button className='px-8 py-2 mt-4 mr-8'>Code</button>
+            <button className='px-8 py-2 mt-4 mr-8'>Extension</button>
           </a>
-          {/* <a
-            href='https://property-finder-development.web.app/'
+          <a
+            href='https://youtu.be/wgAfirEhvy4'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4'>Demo</button>
-          </a> */}
+          </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
               <p className='py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> CUDA
+                <RiRadioButtonFill className='pr-1' /> Javascript
               </p>
               <p className='py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> C++
+                <RiRadioButtonFill className='pr-1' /> Python
+              </p>
+              <p className='py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Firebase
+              </p>
+              <p className='py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Chrome API
               </p>
               {/* <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Javascript
