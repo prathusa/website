@@ -38,7 +38,7 @@ const madgpa = () => {
           />
           {/* </div> */}
           <p className='py-8'>
-          MadGPA is a powerful Chrome extension that enhances the official University of Wisconsin-Madison course enrollment website by overlaying key course distribution data. This valuable information helps students make informed decisions when balancing their course schedules and balancing academic rigor. With a 5-star rating on the Chrome store and an active user base of 200 daily users, MadGPA is a must-have tool for anyone seeking to excel in their studies at UW-Madison.
+          MadGPA is a powerful Chrome extension that enhances the official University of Wisconsin-Madison course enrollment website by overlaying key course distribution data. This valuable information helps students make informed decisions when balancing their course schedules and balancing academic rigor. With a 5-star rating on the Chrome store and an active user base of 200+ daily users, MadGPA is a must-have tool for anyone seeking to excel in their studies at UW-Madison.
           </p>
           <a
             href='https://chrome.google.com/webstore/detail/madgpa/ngglfcpeciojeakbdenajcljcinejjpa'
